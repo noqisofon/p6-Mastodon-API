@@ -1,0 +1,15 @@
+# -*- mode: gitignore; -*-
+# Emacs temporary files
+*~
+\#*#
+
+# Perl6
+/blib/
+/src/*.o
+/src/Makefile
+/.panda-work
+/resources/*.so
+/resources/*.dylib
+.precomp/
+/Mastodon-API-*
+

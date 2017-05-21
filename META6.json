@@ -1,0 +1,19 @@
+{
+  "authors" : [
+    "Ned Rihine"
+  ],
+  "build-depends" : [ ],
+  "depends" : [ ],
+  "description" : "blah blah blah",
+  "license" : "Artistic-2.0",
+  "name" : "Mastodon::API",
+  "perl" : "6.c",
+  "provides" : {
+    "Mastodon::API" : "lib/Mastodon/API.pm6"
+  },
+  "resources" : [ ],
+  "source-url" : "",
+  "tags" : [ ],
+  "test-depends" : [ ],
+  "version" : "0.0.1"
+}
