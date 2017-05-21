@@ -8,7 +8,7 @@ use Mastodon::App;
 use Mastodon::Client;
 
 plan *;
-{
+subtest {
     my %expected := { hoge => 42, piyo => 72 };
     
     my $base = Mastodon::Base.new( hoge => %expected<hoge>,
@@ -16,9 +16,9 @@ plan *;
 
     is        Mastodon::Base, $base.WHAT                      , 'what is Mastodon::Base?';
     is-deeply %expected     , $base.attributes                , 'attributes is ok';
-}
+}, 'Mastodon::Base';
 
-{
+subtest {
     
     my %expected := { client-id     => 'PIYOPIYO',
                       client-secret => 'HOGEPIYO' };
@@ -30,9 +30,9 @@ plan *;
     is        'PIYOPIYO'   , $app.client-id                   , 'client-id is PIYOPIYO';
     is        'HOGEPIYO'   , $app.client-secret               , 'client-secret is HOGEPIYO';
     is-deeply %expected    , $app.attributes                  , '$app have attributes';
-}
+}, 'Mastodon::App';
 
-{
+subtest {
     my $client = Mastodon::Client.new( base-url    => 'https://example.social/',
                                        barer-token => 'BARE_TOKEN' );
 
@@ -40,6 +40,6 @@ plan *;
     is 'https://example.social/', $client.base-url            , 'base-url is https://example.social/';
     is 'BARE_TOKEN'             , $client.barer-token         , 'barer-token is BARE_TOKEN';
     is 'Mastodon::API/??.?'     , $client.user-agent          , 'default user-agent is Mastodon::API/??.?'; 
-}
+}, 'Mastodon::Client';
 
 done-testing;
