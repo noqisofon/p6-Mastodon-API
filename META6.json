@@ -4,7 +4,7 @@
     ],
     "build-depends" : [ ],
     "depends" : [ "URI", "HTTP::Client" ],
-    "description" : "blah blah blah",
+    "description" : "A perl6 interface for the Mastodon API",
     "license" : "Artistic-2.0",
     "name" : "Mastodon::API",
     "perl" : "6.c",
