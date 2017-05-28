@@ -21,7 +21,7 @@
     "Mastodon::REST::Utils" : "lib/Mastodon/REST/Utils.pm6"
   },
   "resources" : [ ],
-  "source-url" : "",
+  "source-url" : "git://github.com/noqisofon/p6-Mastodon-API.git",
   "tags" : [ ],
   "test-depends" : [ ],
   "version" : "0.0.1"
