@@ -17,6 +17,8 @@
     "Mastodon::Entities::Menthion" : "lib/Mastodon/Entities/Menthion.pm6",
     "Mastodon::Error" : "lib/Mastodon/Error.pm6",
     "Mastodon::Headers" : "lib/Mastodon/Headers.pm6",
+    "Mastodon::REST::API" : "lib/Mastodon/REST/API.pm6",
+    "Mastodon::REST::Client" : "lib/Mastodon/REST/Client.pm6",
     "Mastodon::REST::Request" : "lib/Mastodon/REST/Request.pm6",
     "Mastodon::REST::Utils" : "lib/Mastodon/REST/Utils.pm6"
   },
