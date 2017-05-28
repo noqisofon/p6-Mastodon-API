@@ -2,4 +2,4 @@
 
 find -name '*.pm6' -print -exec perl6 -I./lib -c {} \;
 
-perl6 -I./lib ./t/01-sanity.t
+PERL6LIB=$PWD/lib prove -e perl6 -vr t/

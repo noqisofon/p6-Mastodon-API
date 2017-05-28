@@ -1,30 +1,31 @@
 {
-  "authors" : [
-    "Ned Rihine"
-  ],
-  "build-depends" : [ ],
-  "depends" : [ ],
-  "description" : "blah blah blah",
-  "license" : "Artistic-2.0",
-  "name" : "Mastodon::API",
-  "perl" : "6.c",
-  "provides" : {
-    "Mastodon::API" : "lib/Mastodon/API.pm6",
-    "Mastodon::Account" : "lib/Mastodon/Account.pm6",
-    "Mastodon::App" : "lib/Mastodon/App.pm6",
-    "Mastodon::Base" : "lib/Mastodon/Base.pm6",
-    "Mastodon::Client" : "lib/Mastodon/Client.pm6",
-    "Mastodon::Entities::Menthion" : "lib/Mastodon/Entities/Menthion.pm6",
-    "Mastodon::Error" : "lib/Mastodon/Error.pm6",
-    "Mastodon::Headers" : "lib/Mastodon/Headers.pm6",
-    "Mastodon::REST::API" : "lib/Mastodon/REST/API.pm6",
-    "Mastodon::REST::Client" : "lib/Mastodon/REST/Client.pm6",
-    "Mastodon::REST::Request" : "lib/Mastodon/REST/Request.pm6",
-    "Mastodon::REST::Utils" : "lib/Mastodon/REST/Utils.pm6"
-  },
-  "resources" : [ ],
-  "source-url" : "git://github.com/noqisofon/p6-Mastodon-API.git",
-  "tags" : [ ],
-  "test-depends" : [ ],
-  "version" : "0.0.1"
+    "authors" : [
+        "Ned Rihine"
+    ],
+    "build-depends" : [ ],
+    "depends" : [ "URI", "HTTP::Client" ],
+    "description" : "blah blah blah",
+    "license" : "Artistic-2.0",
+    "name" : "Mastodon::API",
+    "perl" : "6.c",
+    "provides" : {
+        "Mastodon::API" : "lib/Mastodon/API.pm6",
+        "Mastodon::Account" : "lib/Mastodon/Account.pm6",
+        "Mastodon::App" : "lib/Mastodon/App.pm6",
+        "Mastodon::Base" : "lib/Mastodon/Base.pm6",
+        "Mastodon::Client" : "lib/Mastodon/Client.pm6",
+        "Mastodon::Entities::Menthion" : "lib/Mastodon/Entities/Menthion.pm6",
+        "Mastodon::Error" : "lib/Mastodon/Error.pm6",
+        "Mastodon::Headers" : "lib/Mastodon/Headers.pm6",
+        "Mastodon::REST::API" : "lib/Mastodon/REST/API.pm6",
+        "Mastodon::REST::Client" : "lib/Mastodon/REST/Client.pm6",
+        "Mastodon::REST::Request" : "lib/Mastodon/REST/Request.pm6",
+        "Mastodon::REST::Statuses" : "lib/Mastodon/REST/Statuses.pm6",
+        "Mastodon::REST::Utils" : "lib/Mastodon/REST/Utils.pm6"
+    },
+    "resources" : [ ],
+    "source-url" : "git://github.com/noqisofon/p6-Mastodon-API.git",
+    "tags" : [ ],
+    "test-depends" : [ ],
+    "version" : "0.0.1"
 }
