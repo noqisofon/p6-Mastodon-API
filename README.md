@@ -3,7 +3,7 @@
 NAME
 ====
 
-Mastodon::API - blah blah blah
+Mastodon::API - A perl6 interface for the Mastodon API.
 
 SYNOPSIS
 ========
