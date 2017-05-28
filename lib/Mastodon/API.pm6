@@ -1,4 +1,7 @@
 use v6.c;
+
+use Mastodon::REST::Client;
+
 unit class Mastodon::API:ver<0.0.1>;
 
 
