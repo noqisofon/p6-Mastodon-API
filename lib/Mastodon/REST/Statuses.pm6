@@ -1,5 +1,6 @@
 use v6;
 
+use Mastodon::Status;
 use Mastodon::REST::Utils;
 
 unit role Mostodon::REST::Statuses does Mastodon::REST::Utils;
