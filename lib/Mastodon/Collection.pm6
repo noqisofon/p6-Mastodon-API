@@ -2,12 +2,16 @@ use v6;
 
 unit class Mastodon::Collection does Iterable does Positional;
 
-has @.collection;
+has @!collection;
 
-method new(@items, ::T $klass) {
-    self.bless(  )
+method new(*@items) {
+    self.bless( :collection(@items) )
 }
 
-method iterator() {
-    @.collection
-}
+submethod BUILD(:@!collection) {}
+
+method iterator() { @!collection.iterator }
+
+method size() { @!collection.elems }
+
+method map(&block) { @!collection.map( &block ) }
