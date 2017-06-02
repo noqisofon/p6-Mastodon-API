@@ -1,0 +1,14 @@
+#!/usr/bin/env perl6
+# -*- mode: perl6; -*-
+use v6;
+
+use LibYAML;
+
+sub MAIN() {
+    my $yaml = load-yaml-file( './.travis.yml' );
+
+    for $yaml{'script'}.flat -> $line {
+        say $line;
+        shell $line;
+    }
+}
